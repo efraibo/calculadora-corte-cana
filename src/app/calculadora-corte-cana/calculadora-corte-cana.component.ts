@@ -32,13 +32,11 @@ export class CalculadoraCorteCanaComponent {
   calculateRectangleDimensions() {
     const windowWidth = window.innerWidth;
     const windowHeight = window.innerHeight;
-    
-    // Faça cálculos para definir as dimensões proporcionais do retângulo com base no tamanho da janela
-    // Por exemplo, você pode usar uma fórmula para definir a largura e altura em relação à largura da janela
-    
-    this.rectangleWidth = `${windowWidth * 0.3}px`; // Exemplo: 30% da largura da janela
-    this.rectangleHeight = `${windowWidth * 0.15}px`; // Exemplo: 15% da largura da janela
+  
+    this.rectangleWidth = `${windowWidth * 0.3}px`;
+    this.rectangleHeight = `${windowHeight * 0.5}px`;
   }
+  
 
   calculateTriangleDimensions() {
     const rectangleWidth = parseFloat(this.rectangleWidth);
